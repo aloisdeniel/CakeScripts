@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id><%id%></id>
+    <version>$version</version>
+    <title>$name</title>
+    <authors>Aloïs Deniel</authors>
+    <owners>Aloïs Deniel</owners>
+    <licenseUrl>https://github.com/aloisdeniel/Microcharts/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/aloisdeniel/Microcharts/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/aloisdeniel/Microcharts/master/Documentation/Logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><%description%></description>
+    <copyright>Copyright 2017</copyright>
+    <tags><%tags%></tags>
+    <dependencies>
+        <group>
+            <dependency id="SkiaSharp" version="1.59.1" />
+        </group>
+        <group targetFramework="MonoAndroid10">
+            <dependency id="SkiaSharp.Views"  version="1.59.1.1" />
+        </group>
+    </dependencies>
+  </metadata>
+   <files>
+    <!-- Standard -->
+    <file src="..\src\<%assembly%>\bin\Release\netstandard1.3\<%assembly%>.dll" target="lib\netstandard1.3\<%assembly%>.dll"/>
+
+    <!-- Android -->
+    <file src="..\src\<%assembly%>.Droid\bin\Release\<%assembly%>.dll" target="lib\MonoAndroid10\<%assembly%>.dll"/>
+
+    <!-- iOS -->
+	  <file src="..\src\<%assembly%>.iOS\bin\Release\<%assembly%>.dll" target="lib\Xamarin.iOS10\<%assembly%>.dll"/>
+     
+    <!-- UWP -->
+	  <file src="..\src\<%assembly%>.Uwp\bin\Release\<%assembly%>.dll" target="lib\uap\<%assembly%>.dll"/>
+     
+    <!-- macOS -->
+	 <file src="..\src\<%assembly%>.macOS\bin\Release\<%assembly%>.dll" target="lib\xamarinmac\<%assembly%>.dll"/>
+   </files>
+</package>

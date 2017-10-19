@@ -1,0 +1,12 @@
+<config>
+    <android>
+        <mobile-center appid="XXX" deviceSet="XXX" />
+        <master displayName="Master" bundleId="com.company.app" version="1.0.0" />
+        <develop displayName="Develop" bundleId="com.company.app.ci" version="1.0.0" />
+    </android>
+    <ios>
+        <mobile-center appid="XXX" deviceSet="XXX" />
+        <master displayName="Master" bundleId="com.company.app" version="1.0.0" />
+        <develop displayName="Develop" bundleId="com.company.app.ci" version="1.0.0" />
+    </ios>
+</config>
